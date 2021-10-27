@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$base-font: 'Roboto', sans-serif;
+$red_color: #d83434;
+
+@mixin flex() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  font-family: $base-font;
+  border-radius: 5px;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: $red_color;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.5s;
+
+  &:hover {
+    background: #1c2026;
+  }
+}
+.red {
+  color: $red_color;
+}
+header {
+  background: #F6F7FB;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px 0 rgba(10,10,10, 0.1);
+
+  .header {
+    @include flex();
+    justify-content: center;
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+main {
+  min-height: calc(100vh - 161px);
+  margin-top: 20px;
+  padding: 20px 0;
+
+  .btns {
+    text-align: center;
+  }
+
+  .form_box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 445px;
+    margin: 0 auto;
+
+    .line {
+      width: 100%;
+      @include flex();
+      margin: 10px 0;
+    }
+    .line_center {
+      justify-content: center;
+    }
+    input {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px 20px;
+      border: 1px solid #808080;
+      border-radius: 5px;
+    }
+
+    .search_list {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      max-width: 300px;
+      background: #fff;
+      margin-top: -10px;
+      border: 1px solid #808080;
+      border-top: 0;
+      border-radius: 0 0 5px 5px;
+      z-index: 9;
+
+      ul {
+        padding: 0;
+        margin: 10px 0;
+        overflow: auto;
+        list-style: none;
+        max-height: 300px;
+        li {
+          padding: 5px 20px;
+          cursor: pointer;
+          &:hover {
+            background: #e8e8e8;
+          }
+        }
+      }
+    }
+  }
+
+  .info_box {
+    .title_city {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .items {
+      @include flex();
+      margin: 0 -20px;
+
+      .item {
+        width: 100%;
+        margin: 0 20px;
+        padding: 15px;
+        border: 1px solid;
+        border-radius: 5px;
+        text-align: center;
+
+        .weather_time {
+          margin-bottom: 20px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .weather_img {
+          img {
+            margin: 20px auto;
+          }
+        }
+        .weather_state {
+          font-size: 18px;
+        }
+        .weather_temp {
+          margin-bottom: 15px;
+          .temp {
+            font-size: 20px;
+            font-weight: bold;
+          }
+          .temp_other {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        .weather_wind {
+          margin-top: 15px;
+        }
+
+        &.today {
+          padding: 40px 15px;
+
+          .weather_time {
+            color: $red_color;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  padding: 20px 0;
+  border-top: 1px solid #000;
+  background: #1c2026;
+  color: #fff;
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
