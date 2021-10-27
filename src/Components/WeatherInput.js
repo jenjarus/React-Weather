@@ -40,9 +40,9 @@ const WeatherInput = ({setIdCity, setCityName, setErrorCity}) => {
     };
 
     const search_result = () => {
-        return searchList.map(el =>
+        return searchList.map((el, i) =>
         <li
-        key={el.title}
+        key={i}
         onClick={() => select_result(el.title, el.woeid)}>
             {el.title}
         </li>);
