@@ -11,10 +11,9 @@ const App = ({idCity, errorCity, setDataToday, setDataYesterday, setDataTomorrow
   const [loading, setLoading] = useState(false);
 
   const api = async (idCity, date='', flag) => {
-    const proxy_url = "https://cors-anywhere.herokuapp.com/";
-    const url = `https://www.metaweather.com/api/location/${idCity}${date}`;
+    const url = `/api/location/${idCity}${date}/`;
 
-    const api_url = await fetch(proxy_url + url);
+    const api_url = await fetch(url);
     const data = await api_url.json();
 
     switch(flag) {

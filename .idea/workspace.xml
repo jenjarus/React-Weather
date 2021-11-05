@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c9a34ed2-7e86-4a63-b2e3-9ad50901d05f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/WeatherInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WeatherInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +63,16 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -71,6 +83,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -87,7 +104,14 @@
       <workItem from="1635256061691" duration="20847000" />
       <workItem from="1635324560883" duration="7805000" />
       <workItem from="1635344310823" duration="22000" />
-      <workItem from="1635358929071" duration="285000" />
+      <workItem from="1635358929071" duration="603000" />
+      <workItem from="1635408290985" duration="43000" />
+      <workItem from="1635408976878" duration="645000" />
+      <workItem from="1635432587633" duration="4469000" />
+      <workItem from="1635448944919" duration="680000" />
+      <workItem from="1635459577267" duration="135000" />
+      <workItem from="1636105072263" duration="3690000" />
+      <workItem from="1636114815922" duration="3166000" />
     </task>
     <servers />
   </component>

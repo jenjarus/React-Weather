@@ -24,7 +24,7 @@ const DAY = {
 const WeatherItem = ({data, flag}) => {
     let classBox = "item";
     classBox += flag === 'today'? ' today' : '';
-    const url_img = `https://www.metaweather.com/static/img/weather/png/64/${data.weather_state_abbr}.png`;
+    const url_img = `/static/img/weather/png/64/${data.weather_state_abbr}.png`;
 
     const the_temp = (data.the_temp > 0 ? '+' : '') + Number(data.the_temp).toFixed(0);
     const min_temp = (data.min_temp > 0 ? '+' : '') + Number(data.min_temp).toFixed(0);

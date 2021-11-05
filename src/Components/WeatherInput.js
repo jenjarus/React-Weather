@@ -8,20 +8,18 @@ const WeatherInput = ({setIdCity, setCityName, setErrorCity}) => {
     const [searchList, setSearchList] = useState([]);
 
     const api = async (city) => {
-        const proxy_url = "https://cors-anywhere.herokuapp.com/";
-        const url = `https://www.metaweather.com/api/location/search/?query=${city}`;
+        const url = `/api/location/search/?query=${city}`;
 
-        const api_url = await fetch(proxy_url + url);
+        const api_url = await fetch(url);
         const data = await api_url.json();
         setSearchList(data);
     };
 
     const apiSubmit = async (city) => {
-        const proxy_url = "https://cors-anywhere.herokuapp.com/";
-        const url = `https://www.metaweather.com/api/location/search/?query=${city}`;
+        const url = `/api/location/search/?query=${city}`;
 
         try {
-            const api_url = await fetch(proxy_url + url);
+            const api_url = await fetch(url);
             const data = await api_url.json();
             setIdCity(data[0].woeid);
             setCityName(data[0].title);
