@@ -72,6 +72,7 @@ main {
       @include flex();
       margin: 10px 0;
     }
+
     .line_center {
       justify-content: center;
     }
@@ -81,6 +82,16 @@ main {
       padding: 10px 20px;
       border: 1px solid #808080;
       border-radius: 5px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .btn {
+        background-image: url(../images/search_icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 28px;
+        text-indent: -9999px;
+      }
     }
 
     .search_list {
@@ -110,9 +121,16 @@ main {
         }
       }
     }
+    @media screen and (max-width: 767px) {
+      .search_list {
+        width: calc(100% - 60px);
+      }
+    }
   }
 
   .info_box {
+    overflow: hidden;
+
     .title_city {
       margin-bottom: 30px;
       text-align: center;
@@ -166,6 +184,38 @@ main {
             color: $red_color;
           }
         }
+      }
+
+      @media screen and (max-width: 991px) {
+        .item {
+          width: calc(33.3% - 20px);
+          margin: 0 10px;
+          &:first-child {
+            display: none;
+          }
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .item {
+          width: 100%;
+          max-width: 320px;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      .items {
+        margin: 0 -10px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .items {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
       }
     }
   }
