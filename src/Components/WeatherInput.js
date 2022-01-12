@@ -8,7 +8,7 @@ const WeatherInput = ({setIdCity, setCityName, setErrorCity}) => {
     const [searchList, setSearchList] = useState([]);
 
     const api = async (city) => {
-        const url = `https://www.metaweather.com/api/location/search/?query=${city}`;
+        const url = `/api/location/search/?query=${city}`;
 
         const api_url = await fetch(url);
         const data = await api_url.json();
@@ -16,7 +16,7 @@ const WeatherInput = ({setIdCity, setCityName, setErrorCity}) => {
     };
 
     const apiSubmit = async (city) => {
-        const url = `https://www.metaweather.com/api/location/search/?query=${city}`;
+        const url = `/api/location/search/?query=${city}`;
 
         try {
             const api_url = await fetch(url);
