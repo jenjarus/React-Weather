@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9a34ed2-7e86-4a63-b2e3-9ad50901d05f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/base.scss" afterDir="false" />
-    </list>
+    <list default="true" id="c9a34ed2-7e86-4a63-b2e3-9ad50901d05f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +111,7 @@
       <workItem from="1636105072263" duration="3690000" />
       <workItem from="1636114815922" duration="6336000" />
       <workItem from="1641372150608" duration="258000" />
-      <workItem from="1642009191220" duration="2070000" />
+      <workItem from="1642009191220" duration="2332000" />
     </task>
     <servers />
   </component>
